@@ -48,7 +48,7 @@ Click **Add** and configure:
 |-------|-------------|---------|
 | **Company Name** | Identifier for ERP system | `erp.zozin.vn` |
 | **Company URL** | Full URL to ERP | `https://erp.zozin.vn` |
-| **Bearer Token** | JWT token for ERP API authentication | `eyJ0eXAiOiJKV1Q...` |
+| **Bearer Token** | JWT token for ERP API authentication | `12312312312...` |
 | **ESL Host** | FreeSWITCH ESL host | `127.0.0.1` |
 | **ESL Port** | FreeSWITCH ESL port | `8021` |
 | **ESL Password** | FreeSWITCH ESL password | `ClueCon` |
@@ -70,7 +70,7 @@ $allowedIps = [
 
 // Valid users for Basic Auth
 $validUsers = [
-    'clicktocall' => 'd$q;xvUMiP!VRM'
+    'clicktocall' => '12312312312'
 ];
 ?>
 ```
@@ -88,7 +88,7 @@ POST https://tongdai.zozin.vn/app/autocall/autocall.php
 HTTP Basic Authentication:
 ```
 Username: clicktocall
-Password: d$q;xvUMiP!VRM
+Password: 12312312312
 ```
 
 ### Request Body
@@ -197,7 +197,7 @@ customer_id: {customer_id}
 
 ```bash
 curl -X POST https://tongdai.zozin.vn/app/autocall/autocall.php \
-  -u "clicktocall:d\$q;xvUMiP!VRM" \
+  -u "clicktocall:12312312312" \
   -H "Content-Type: application/json" \
   -d '{
     "campaign_id": "123456789",
@@ -211,7 +211,7 @@ curl -X POST https://tongdai.zozin.vn/app/autocall/autocall.php \
 
 ```bash
 curl -X POST https://tongdai.zozin.vn/app/autocall/autocall.php \
-  -u "clicktocall:d\$q;xvUMiP!VRM" \
+  -u "clicktocall:12312312312" \
   -H "Content-Type: application/json" \
   -d '{
     "campaign_id": "123456789",
@@ -275,3 +275,4 @@ For issues or questions, contact your system administrator.
 ## License
 
 Mozilla Public License 1.1 (MPL 1.1)
+
